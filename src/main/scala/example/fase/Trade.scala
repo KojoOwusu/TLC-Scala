@@ -26,7 +26,10 @@ package example {
 
   //companion object
 /*  object Trade{
-    def apply(id:String, symbol:String, quantity:Int, price:Double) = new Trade(id, symbol, quantity, price);
+    def apply(id:String, symbol:String, quantity:Int, price:Double) = {
+    require(price >= 0.00)
+    new Trade(id, symbol, quantity, price)
+    }
   }
 }
 

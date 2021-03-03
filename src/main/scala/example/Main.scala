@@ -14,5 +14,4 @@ object Main extends App{
       println(t2)
      // val t3 = Trade("T1","APPL",100,24.2)
 
-
   }
